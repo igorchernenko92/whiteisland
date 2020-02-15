@@ -121,3 +121,43 @@ Updated: 2020-02-11 16:05:12
 ul.page-numbers li, .page-links span {
     margin-right: 0!important;
 }
+
+.wpsight-listing-summary .listing-details-label {
+    display: none;
+}
+
+.wpsight-listing-summary .listing-details-detail {
+    position: relative;
+}
+
+.wpsight-listing-summary .listing-details-3 .listing-details-value:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    display: block;
+    background-image: url("assets/img/icon-grundstueck.svg");
+    position: absolute;
+    bottom: 4px;
+}
+
+.wpsight-listing-summary .listing-details-4 .listing-details-value:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    display: block;
+    background-image: url("assets/img/icon-wohnflaeche.svg");
+    position: absolute;
+    bottom: 4px;
+}
+
+.wpsight-listing-summary .listing-details-value {
+    margin-left: 20px;
+}
