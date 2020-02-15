@@ -10,9 +10,9 @@
 
     <div class="wpsight-listing-description" itemprop="description">
         <?php if( has_excerpt() ) : ?>
-            <?php echo apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_excerpt() ) ); ?>
+            <?php echo wp_trim_words(apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_excerpt() ) ), 25); ?>
         <?php else : ?>
-            <?php echo wp_trim_words(apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_content() ) ), 20); ?>
+            <?php echo wp_trim_words(apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_content() ) ), 25); ?>
         <?php endif; ?>
     </div>
 
