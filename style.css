@@ -1,0 +1,123 @@
+/*
+Theme Name: Total Child
+Theme URI: https://wpcasa.com/
+Template: Total
+Author: WPCasa
+Author URI: https://wpcasa.com/
+Description: WordPress Theme
+Tags: custom-colors,accessibility-ready,custom-header,custom-menu,custom-logo,editor-style,featured-images,footer-widgets,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready
+Version: 4.9.8.1581437112
+Updated: 2020-02-11 16:05:12
+
+*/
+
+
+.wpsight-listings {
+    margin-left: -15px;
+    margin-right: -15px;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.listing-archive {
+    padding: 0 15px;
+}
+
+@media(max-width: 576px) {
+    .wpsight-listings {
+        display: block;
+    }
+}
+
+.wpsight-listing-wrap-img img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 5px solid #ab1d46;
+}
+
+@media(max-width: 768px) {
+    .wpsight-listing-wrap-img img {
+        height: 230px;
+    }
+}
+
+.listing-archive-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wpsight-listing-section-description p {
+    margin-bottom: 10px;
+}
+
+.wpsight-listings .listing {
+    margin-bottom: 30px !important;
+}
+
+.wpsight-listing-section-description p:last-child {
+    margin-bottom: 0;
+}
+
+.wpsight-listing-description {
+    font-size: 12px;
+}
+
+.wpsight-listing-section-info .alignright,
+.wpsight-listing-section-info .alignleft {
+    margin: 0;
+}
+
+.wpsight-listing-section-info {
+    margin: auto 0 0 !important;
+    padding: 8px 0 10px;
+    border-top: 1px solid #EEF0F3;
+    border-bottom: 1px solid #EEF0F3;
+}
+
+.wpsight-listing-title h2,
+.wpsight-listing-title a {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
+.wpsight-listing-price {
+    font-weight: bold;
+}
+
+.wpsight-listing-info {
+    border: none;
+    padding: 0;
+}
+
+.wpsight-listing-content-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wpsight-listing-thumbnail .wpsight-label span {
+    padding-bottom: 3px;
+
+}
+
+.wpsight-listing-thumbnail .wpsight-label,
+.wpsight-listing-thumbnail .wpsight-label span {
+    position: static;
+}
+
+.listings-panel-action .listings-sort select {
+    font-size: 14px;
+}
+
+.wpsight-pagination li {
+    display: inline-block;
+    margin-right: 0!important;
+}
+
+ul.page-numbers li, .page-links span {
+    margin-right: 0!important;
+}
