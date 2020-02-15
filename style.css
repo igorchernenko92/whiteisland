@@ -161,3 +161,23 @@ ul.page-numbers li, .page-links span {
 .wpsight-listing-summary .listing-details-value {
     margin-left: 20px;
 }
+
+.wpsight-listing-section.wpsight-listing-section-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wpsight-listing-summary {
+    margin-bottom: 0;
+}
+
+.wpsight-listing-wrap-img {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 860px) {
+    .wpsight-listing-price {
+        font-size: 12px;
+    }
+}
