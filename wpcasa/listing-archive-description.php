@@ -9,10 +9,11 @@
     <?php endif; ?>
 
     <div class="wpsight-listing-description" itemprop="description">
+        <?php $read_more = '<a class="read_more_archive" href="'. get_permalink(get_the_ID()) . '">' .  __( ' [Weiterlesen]', 'wpcasa' ) . '</a>'  ?>
         <?php if( has_excerpt() ) : ?>
-            <?php echo wp_trim_words(apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_excerpt() ) ), 25); ?>
+            <?php echo wp_trim_words(apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_excerpt() ) ), 25, $read_more) ?>
         <?php else : ?>
-            <?php echo wp_trim_words(apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_content() ) ), 25); ?>
+            <?php echo wp_trim_words(apply_filters( 'wpsight_listing_description', wpsight_format_content( get_the_content() ) ), 25, $read_more) ?>
         <?php endif; ?>
     </div>
 

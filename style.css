@@ -12,12 +12,17 @@ Updated: 2020-02-11 16:05:12
 */
 
 
+
+.full-width-main-layout .container, .full-width-main-layout .vc_row-fluid.container, .boxed-main-layout #wrap {
+    width: 980px !important;
+}
+
 .wpsight-listings {
     margin-left: -15px;
     margin-right: -15px;
     align-items: stretch;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .listing-archive {
@@ -63,7 +68,8 @@ Updated: 2020-02-11 16:05:12
 }
 
 .wpsight-listing-description {
-    font-size: 12px;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 .wpsight-listing-section-info .alignright,
@@ -86,6 +92,12 @@ Updated: 2020-02-11 16:05:12
 
 .wpsight-listing-price {
     font-weight: bold;
+    font-size: 16px;
+}
+
+.wpsight-listing-price .listing-price-symbol,
+.wpsight-listing-price .listing-price-value {
+    font-size: 16px;
 }
 
 .wpsight-listing-info {
@@ -166,6 +178,9 @@ ul.page-numbers li, .page-links span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 4px 0;
 }
 
 .wpsight-listing-summary {
@@ -180,4 +195,8 @@ ul.page-numbers li, .page-links span {
     .wpsight-listing-price {
         font-size: 12px;
     }
+}
+
+.read_more_archive {
+    text-decoration: underline;
 }
