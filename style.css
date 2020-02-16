@@ -14,7 +14,7 @@ Updated: 2020-02-11 16:05:12
 
 
 .full-width-main-layout .container, .full-width-main-layout .vc_row-fluid.container, .boxed-main-layout #wrap {
-    width: 980px !important;
+    width: 1030px !important;
 }
 
 .wpsight-listings {
@@ -22,7 +22,7 @@ Updated: 2020-02-11 16:05:12
     margin-right: -15px;
     align-items: stretch;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
 
 .listing-archive {
